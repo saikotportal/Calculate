@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="logo">CALC<span>.</span>PY</h1>
+      <p class="tagline">Powered by Python + Flask</p>
+    </header>
+
+    <div class="calculator">
+      <!-- Display -->
+      <div class="display">
+        <div class="display-expr" id="expression">—</div>
+        <div class="display-result" id="result">0</div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="inputs">
+        <div class="input-group">
+          <label>A</label>
+          <input type="number" id="numA" placeholder="0" step="any"/>
+        </div>
+        <div class="input-group">
+          <label>B</label>
+          <input type="number" id="numB" placeholder="0" step="any"/>
+        </div>
+      </div>
+
+      <!-- Operation Buttons -->
+      <div class="ops-grid">
+        <button class="op-btn" data-op="add">+</button>
+        <button class="op-btn" data-op="subtract">−</button>
+        <button class="op-btn" data-op="multiply">×</button>
+        <button class="op-btn" data-op="divide">÷</button>
+        <button class="op-btn" data-op="power">^</button>
+        <button class="op-btn" data-op="modulo">%</button>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button class="btn-clear" id="clearHistory">Clear History</button>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="history-panel">
+      <h2>History</h2>
+      <ul id="historyList"><li class="empty">No calculations yet.</li></ul>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
