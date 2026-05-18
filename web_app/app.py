@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.secret_key = "calculator-secret-key-2024"
 
 
-def get_calculator():
+def get_calculator(): 
     calc = Calculator()
     calc.history = session.get("history", [])
     return calc
