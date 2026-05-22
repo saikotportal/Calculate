@@ -6,7 +6,7 @@ A calculator built in two parts:
 
 ---
 
-## Project Structure
+## Project Structure 
 
 ```
 calculator_app/
