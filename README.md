@@ -7,7 +7,7 @@ A calculator built in two parts:
 ---
 
 ## Project Structure 
-
+ 
 ```
 calculator_app/
 ├── python_app/
