@@ -14,7 +14,7 @@ calculator_app/
 │   ├── calculator.py   # Core calculator logic (reusable class)
 │   └── main.py         # Command-line interface
 ├── web_app/
-│   ├── app.py          # Flask backend (reuses calculator.py)
+│   ├── app.py          # Flask backend (reuses calculator.py) 
 │   ├── templates/
 │   │   └── index.html  # Web UI
 │   └── static/
