@@ -1,5 +1,5 @@
 # Calculator App — Python + Flask
-
+ 
 A calculator built in two parts:
 - **Python CLI App** — runs in your terminal
 - **Web App** — Flask backend + HTML/CSS/JS frontend
