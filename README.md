@@ -23,7 +23,7 @@ calculator_app/
 ├── requirements.txt
 └── README.md
 ```
-
+ 
 ---
 
 ## Setup
